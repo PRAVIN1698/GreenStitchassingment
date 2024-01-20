@@ -3,8 +3,9 @@
 ## Description
 
 signup 
-    -- uSER WILL BE SIGNEDN IN STORED IN MEMEORY DATABSE - H2
-
+    -- USER WILL BE SIGNEDiN IN 
+    --Information IN MEMEORY DATABSE - H2
+     
 Login
     ==  After login user need to login inorder to retrive the Bearer token
 
@@ -20,12 +21,32 @@ Login
 - Maven 
 - Git
 
+# Database Configuration
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+# H2 Console Configuration
+spring.security.enabled=false
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+
+
+
+
+
+
+
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/yourusername/your-project.git`
 2. Navigate to the project directory: `cd your-project`
 3. Build the project: `mvn clean install`
 4. Run the application: `mvn spring-boot:run`
+
+
 
 ## Usage
 
