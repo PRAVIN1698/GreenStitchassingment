@@ -1,4 +1,4 @@
-# SSpring Security h2 database
+# Spring Security h2 database
 
 ## Description
 
